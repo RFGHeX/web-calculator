@@ -1,15 +1,24 @@
 <html>
-    <head>
-        <script src="./script.js"></script>
-    </head>
-    <body>
-        <h1>Addition calculator</h1>
-        <form>
-            <input type="text" Id="numOne"  />
-            <span></span>
-            <input type="text" Id="numTwo"  />
-            <input type="button" value="Calculate"   onclick="sum()" />
-        </form>
-        <div id="result"></div>
-    </body>
+
+<head>
+    <script src="./script.js"></script>
+</head>
+
+<body>
+    <h1>Blissful Arithmetic</h1>
+    <form>
+        <label for="numOne"> First Number:</label><br>
+        <input type="text" Id="numOne" />
+        <select id="operator">
+            <option value="add">+</option>
+            <option value="subtract">-</option>
+            <option value="multiply">*</option>
+            <option value="divide">/</option>
+        </select>
+        <input type="text" Id="numTwo" />
+        <input type="button" value="Calculate" onclick="sum()" />
+    </form>
+    <div id="result"></div>
+</body>
+
 </html>
